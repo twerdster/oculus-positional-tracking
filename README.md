@@ -18,6 +18,8 @@ No runnable source has been published in this repository yet. Platform requireme
 
 - [Project entry on Aaron Wetzler's website](https://twerdster.github.io/#full-positional-tracking-for-oculus-rift)
 
+- [Demo](https://www.youtube.com/watch?v=3Y0BYmFOAVQ)
+
 ## Attribution and Updates
 
 Original student and third-party attribution will be retained. No license for unrecovered source code is implied by this README. Original authors can open an issue to contribute updates or request corrections or removal of their material.
