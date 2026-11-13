@@ -20,7 +20,7 @@ The historical student project investigated two approaches to adding positional 
 
 The presentation describes a head-mounted depth camera using KinectFusion and a Vicon camera system. The presentation divides the design into tracking providers, a position server with a TCP/IP API, and a consumer application. The slides discuss filtering and show API declarations for initialization, filter parameters and position/rotation exchange. These document the historical design; no implementation of that API is included here.
 
-No application source, executable, tracking dataset or build configuration has been recovered. In November 2026, Vlady Ostrovski reported having no surviving project material and Dor could not find the code.
+No application source, executable, tracking dataset or build configuration has been recovered. On 12 November 2026, Vlady Ostrovski reported having no surviving project material and Dor Goldbaum could not find the code. On 13 November, Vlady Ostrovski re-supplied the historical project video already linked below; no source code accompanied it.
 
 ## Use and validation
 
@@ -35,7 +35,7 @@ All 13 slides were rendered with LibreOffice and reviewed during recovery. No so
 - [Original RiftFusion presentation (PPTX)](original/RiftFusion-Presentation.pptx)
 - [Project entry on Aaron Wetzler's website](https://twerdster.github.io/#full-positional-tracking-for-oculus-rift)
 - [Material provenance](PROVENANCE.md)
-- [Video linked by the existing project record (not reviewed)](https://www.youtube.com/watch?v=3Y0BYmFOAVQ)
+- [Project video re-supplied by Vlady Ostrovski (contents not reviewed)](https://www.youtube.com/watch?v=3Y0BYmFOAVQ)
 
 ## Attribution and reuse
 

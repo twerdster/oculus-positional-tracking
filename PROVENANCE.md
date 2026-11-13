@@ -1,8 +1,10 @@
 # Material provenance
 
-The project description, student credits and `assets/project-preview.jpg` came from the archived project page on Aaron Wetzler's former Technion website. The image is unchanged. The video URL is retained from the existing README and the website's project resource entry, where it was labeled “demo”. Its contents have not been reviewed, and no technical findings here depend on that video.
+The project description, student credits and `assets/project-preview.jpg` came from the archived project page on Aaron Wetzler's former Technion website. The image is unchanged. The historical video URL was already linked in the README and the website's project resource entry, where it was labeled “demo”.
 
 On 12 November 2026, Vlad Ostrovski agreed to keeping an archival project record and supplied his public profile link. Dor Goldbaum supplied the original RiftFusion presentation and his public profile link. Vlad reported having no surviving project material; Dor could not find the code. The README preserves the archived credit “Vlady Ostrovski” and links to the profile Vlad supplied.
+
+On 13 November 2026, Vlad supplied the same historical project video URL. YouTube's oEmbed metadata checked that day identifies it as “Technion CV Project - Oculus Rift real-time position tracking” with the channel name OstrovskiVlad. Only the listing metadata was checked; the video contents have not been reviewed. No technical findings here depend on the video. This corroborates the existing link's provenance and is not new tracking-runtime validation. No source code accompanied the reply.
 
 ## Recovered presentation
 
