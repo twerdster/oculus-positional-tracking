@@ -1,44 +1,37 @@
-# Full positional tracking for Oculus Rift
+# RiftFusion: positional tracking for Oculus Rift
 
 <p align="center">
   <img src="assets/project-preview.jpg" alt="A user wearing an Oculus Rift headset and holding a handheld rig in a lab, with an inset of the stereo headset view" width="460">
 </p>
 
+*Original project image, unchanged.*
+
+RiftFusion investigated adding positional tracking to the Oculus Rift using either KinectFusion or a Vicon system. The design separated tracking providers, a position server and a consumer application.
+
+Students: [Dor Goldbaum](https://www.linkedin.com/in/dorgold/), [Vlady Ostrovski](https://www.linkedin.com/in/vladislav-ostrovski-b99619121/). Supervision: Aaron Wetzler.
+
 ![Platform: Oculus Rift](https://img.shields.io/badge/platform-Oculus%20Rift-lightgrey)
 ![Source: not recovered](https://img.shields.io/badge/source-not%20recovered-lightgrey)
 ![Archive: historical student project](https://img.shields.io/badge/archive-historical%20student%20project-informational)
 
-A documentation record of a project investigating positional tracking for an Oculus Rift headset.
+## Original
 
-Students: [Dor Goldbaum](https://www.linkedin.com/in/dorgold/), [Vlady Ostrovski](https://www.linkedin.com/in/vladislav-ostrovski-b99619121/).
+The original image, a 13-slide presentation and the historical video link are preserved. No source code, tracking data, executable or build configuration has been recovered. The [recovery notes](docs/RECOVERY.md) record historical requirements and attribution; [PROVENANCE.md](PROVENANCE.md) records provenance and the scope of the authors' responses.
 
-Supervision: Aaron Wetzler.
+## Updated
 
-## Available materials
+[**Run the browser demo**](https://twerdster.github.io/oculus-positional-tracking/)
 
-The historical student project investigated two approaches to adding positional tracking to an Oculus Rift headset. This repository preserves the project description, credits, archived figure and the [original 13-slide Hebrew presentation](original/RiftFusion-Presentation.pptx), supplied by Dor Goldbaum in November 2026.
+A separate browser demo, written in November 2026, plays a generated head trajectory. You can vary synthetic noise, sample delay and exponential smoothing, compare the known path with the filtered estimate, and export the samples. It uses no KinectFusion or Vicon recordings and runs none of the original code. Noise and delay are illustrative settings, not measured sensor performance. The recovered original files are unchanged.
 
-The presentation describes a head-mounted depth camera using KinectFusion and a Vicon camera system. The presentation divides the design into tracking providers, a position server with a TCP/IP API, and a consumer application. The slides discuss filtering and show API declarations for initialization, filter parameters and position/rotation exchange. These document the historical design; no implementation of that API is included here.
+### Run locally
 
-No application source, executable, tracking dataset or build configuration has been recovered. On 12 November 2026, Vlady Ostrovski reported having no surviving project material and Dor Goldbaum could not find the code. On 13 November, Vlady Ostrovski re-supplied the historical project video already linked below; no source code accompanied it.
+```sh
+python3 -m http.server 8000 --directory docs
+```
 
-## Use and validation
+Then open http://localhost:8000. No build step or external service is required.
 
-Open the presentation in PowerPoint, LibreOffice Impress or another PPTX reader to inspect the original design. There is no tracking software to install or run from this repository.
+### Checks and licensing
 
-The slides assume a single user in a known room with fixed lighting and a bounded movement area. They report a preference for Vicon over the KinectFusion approach, but provide no numerical accuracy comparison or latency measurements. The Vicon slide lists 120 Hz as a system output rate; this is a historical description, not a benchmark reproduced during recovery.
-
-All 13 slides were rendered with LibreOffice and reviewed during recovery. No source build, headset test, tracking experiment or API execution was performed. No SDK versions are recorded in the recovered materials, and support for current headsets is unverified.
-
-## Links
-
-- [Original RiftFusion presentation (PPTX)](original/RiftFusion-Presentation.pptx)
-- [Project entry on Aaron Wetzler's website](https://twerdster.github.io/#full-positional-tracking-for-oculus-rift)
-- [Material provenance](PROVENANCE.md)
-- [Project video re-supplied by Vlady Ostrovski (contents not reviewed)](https://www.youtube.com/watch?v=3Y0BYmFOAVQ)
-
-## Attribution and reuse
-
-The student names follow the archived project page. Their profile links were supplied by the respective students in November 2026. The presentation is retained unchanged as original project material. This archive assigns no reuse license to the presentation, figure or other materials. The deck includes third-party illustrations and photographs that this archive does not license. Original authors can open an issue to contribute updates or request corrections or removal of their material.
-
-Figure provenance: `assets/project-preview.jpg` is the original student-project figure from the archived project page on Aaron Wetzler's website, copied without modification.
+Browser-check results, implementation notes and limits are in [updated/README.md](updated/README.md). These checks apply only to the new demo; they do not validate the historical system or any hardware. The [MIT license](docs/DEMO-LICENSE.txt) covers only the new demo; original materials keep their existing attribution and terms.
